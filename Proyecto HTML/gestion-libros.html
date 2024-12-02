@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Libros - Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gestión de Libros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gestion-usuarios.html">Gestión de Usuarios</a></li>
+                <li><a href="prestamos.html">Préstamos</a></li>
+                <li><a href="devoluciones.html">Devoluciones</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Registrar Nuevo Libro</h2>
+            <form id="libroForm">
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                <label for="autor">Autor:</label>
+                <input type="text" id="autor" name="autor" required>
+                <label for="isbn">ISBN:</label>
+                <input type="text" id="isbn" name="isbn" required>
+                <label for="año">Año de Publicación:</label>
+                <input type="number" id="año" name="año" required>
+                <label for="categoria">Categoría:</label>
+                <input type="text" id="categoria" name="categoria" required>
+                <button type="submit">Agregar Libro</button>
+            </form>
+        </section>
+        <section>
+            <h2>Lista de Libros</h2>
+            <div id="listaLibros">
+                <!-- Aquí se mostrarán los libros registrados -->
+            </div>
+        </section>
+    </main>
+    <script src="script-libros.js"></script>
+</body>
+</html>

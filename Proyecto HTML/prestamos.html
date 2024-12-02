@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préstamos de Libros - Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Préstamos de Libros</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gestion-usuarios.html">Gestión de Usuarios</a></li>
+                <li><a href="gestion-libros.html">Gestión de Libros</a></li>
+                <li><a href="devoluciones.html">Devoluciones</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+                <li><a href="reportes.html">Reportes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Registrar Préstamo de Libro</h2>
+            <form id="prestamoForm">
+                <label for="usuarioPrestamo">Usuario:</label>
+                <select id="usuarioPrestamo" required></select>
+                <label for="libroPrestamo">Libro:</label>
+                <select id="libroPrestamo" required></select>
+                <label for="fechaPrestamo">Fecha de Préstamo:</label>
+                <input type="date" id="fechaPrestamo" name="fechaPrestamo" required>
+                <label for="fechaDevolucion">Fecha de Devolución:</label>
+                <input type="date" id="fechaDevolucion" name="fechaDevolucion" required>
+                <button type="submit">Registrar Préstamo</button>
+            </form>
+        </section>
+        <section>
+            <h2>Lista de Préstamos</h2>
+            <div id="listaPrestamos">
+                <!-- Aquí se mostrarán los préstamos registrados -->
+            </div>
+        </section>
+    </main>
+    <script src="script-prestamos.js"></script>
+</body>
+</html>

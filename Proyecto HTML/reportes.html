@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes - Biblioteca</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Reportes de la Biblioteca</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gestion-usuarios.html">Gestión de Usuarios</a></li>
+                <li><a href="gestion-libros.html">Gestión de Libros</a></li>
+                <li><a href="prestamos.html">Préstamos</a></li>
+                <li><a href="devoluciones.html">Devoluciones</a></li>
+                <li><a href="reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Generar Reportes</h2>
+            <button onclick="generarReportes()">Generar Reportes</button>
+            <div id="reportesGenerados">
+                <!-- Aquí se mostrarán los reportes generados -->
+            </div>
+        </section>
+    </main>
+    <script src="script-reportes.js"></script>
+</body>
+</html>
